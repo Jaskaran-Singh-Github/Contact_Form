@@ -1,0 +1,182 @@
+body {
+  background-color: #e3f1e9;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #1d2c2e;
+  font-size: 24px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 6px;
+  color: #1d2c2e;
+  font-size: 14px;
+}
+
+.input-group span {
+  color: #2e8b57;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #18572a; /* soft blue */
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+
+.name-fields {
+  display: flex;
+  gap: 15px;
+}
+
+.name-fields .input-group {
+  flex: 1;
+}
+
+.radio-group {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.radio-group input {
+  margin-right: 6px;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007b5e;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #005f48;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .name-fields {
+    flex-direction: column;
+  }
+
+  .radio-group {
+    flex-direction: column;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  button {
+    font-size: 15px;
+  }
+}
+
+.query-type {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.query-type {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.query-option {
+  display: flex;
+  align-items: center;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex: 1 1 220px;
+  box-sizing: border-box;
+  justify-content: center;
+  background-color: white;
+  font-size: 14px;
+  color: #333;
+  font-weight: normal;
+}
+
+.query-option input[type="radio"] {
+  margin-right: 10px;
+  accent-color: #2e8b57; /* Just the dot is green */
+}
+
+/* Hover only affects border, not text */
+.query-option:hover {
+  background-color: #f9f9f9;
+  border-color: #2e8b57;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+  outline: 2px solid #2e8b57;
+  outline-offset: 2px;
+}
+
+/* Visibly hidden screen reader text helper (optional) */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  overflow: hidden;
+}
+
